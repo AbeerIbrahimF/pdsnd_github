@@ -206,7 +206,7 @@ def user_stats(df):
    print('-'*100)
 
 
-def display_raw_data(df):
+def show_raw_data(df):
    """ function to display 5 lines of raw data"""
 
    print("Would you like to see raw data? (yes) or (no)")
@@ -220,7 +220,7 @@ def display_raw_data(df):
          break
       else:
          print("Please answer with (yes) or (no)")
-         display_raw_data(df)
+         show_raw_data(df)
          return
 
    print('-'*100)
@@ -235,7 +235,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_raw_data(df)
+        show_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
